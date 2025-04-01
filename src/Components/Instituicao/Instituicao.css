@@ -1,0 +1,338 @@
+/* Area total da tela---------------------------*/
+.box-fullContent {
+  box-sizing: border-box;
+  display: flex;
+}
+.box-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 5px;
+}
+/* -------------------------------------------- */
+
+/* Area de Pesquisa-----------------------------*/
+.flexHome-search {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.box-search {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 6px;
+}
+.box-search:focus-within {
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+.input-search {
+  width: 460px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.search {
+  width: 460px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.button-search {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  & img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+}
+.box-search_btnParceiro {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+  align-items: center;
+}
+/* -------------------------------------------- */
+
+/* Botao cadastro de parceiros -----------------*/
+.box-btn_cad_parceiro {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.ul_btn_parceiros {
+  display: flex;
+  width: 100px;
+  margin-right: 0;
+  align-items: center;
+}
+.link_btn_parceiros {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  width: 82px;
+  height: 36px;
+  align-content: center;
+  border-radius: 10px;
+  background-color: #48e5c2;
+  box-shadow: 3px 3px 8px;
+}
+.link_btn_parceiros:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #6effe0;
+}
+/* -------------------------------------------- */
+
+/* Titulo---------------------------------------*/
+.titleHome-parceiros {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* -------------------------------------------- */
+
+/* Caixa de cada Instituição--------------------*/
+.box {
+  width: 300px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 6px 8px;
+}
+.box:hover {
+  transition: transform 0.9s ease-in-out;
+}
+.box:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  transition: 1s;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  & img {
+    border-radius: 10px;
+  }
+}
+
+.descricao,
+.nome {
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  text-indent: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.select_parceiro {
+  text-decoration: none;
+  color: black;
+}
+/* -------------------------------------------- */
+
+/* Dimencionamento para telas de tablets */
+@media (min-width: 481px) and (max-width: 769px) {
+  .flexHome-search {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .box-search {
+    display: flex;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 6px;
+  }
+  .box-search:focus-within {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+  }
+  .input-search {
+    width: 370px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  .search {
+    width: 370px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .button-search {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    & img {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+  }
+  .box-search_btnParceiro {
+    flex-direction: column;
+    width: 400px;
+    align-items: baseline;
+  }
+  .link_btn_parceiros {
+    font-size: 12px;
+    width: 70px;
+    height: 32px;
+    align-content: center;
+  }
+  .ul_btn_parceiros {
+    height: 35px;
+    align-content: center;
+  }
+  /* Titulo---------------------------------------*/
+  .titleHome-parceiros {
+    font-size: 2rem;
+  }
+  /* -------------------------------------------- */
+  .box {
+    width: 200px;
+    height: 230px;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    & img {
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .descricao,
+  .nome {
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-indent: 12px;
+
+    & p {
+      font-size: 12px;
+    }
+  }
+}
+/* Dimencionamento para telas de celulares */
+@media (max-width: 480px) {
+  .flexHome-search {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .box-search {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 6px;
+  }
+  .box-search:focus-within {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+  }
+  .input-search {
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  .search {
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .button-search {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    & img {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+  }
+  .box-search_btnParceiro {
+    flex-direction: column;
+    width: 300px;
+    align-items: baseline;
+  }
+  .link_btn_parceiros {
+    font-size: 11px;
+    width: 64px;
+    height: 32px;
+    align-content: center;
+  }
+  .ul_btn_parceiros {
+    height: 30px;
+  }
+  /* Titulo---------------------------------------*/
+  .titleHome-parceiros {
+    font-size: 1.5rem;
+  }
+  /* -------------------------------------------- */
+  .box {
+    width: 100px;
+    height: 120px;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    & img {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+  .descricao,
+  .nome {
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-indent: 4px;
+
+    & p {
+      font-size: 7px;
+    }
+  }
+}

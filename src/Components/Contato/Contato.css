@@ -1,0 +1,38 @@
+.titulo-contato {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 70px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.select-contatos {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contato {
+    display: flex;
+    background-color: #48e5c2;
+    width: 100vw;
+    height: 300px;
+    text-align: right;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    align-items: center;
+  }
+.sub-contato {
+    width: 80%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .desc-contato {
+    text-align: center;
+  }
+  .img-contato {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }

@@ -1,0 +1,85 @@
+.login-cadastro {
+  display: flex;
+  width: 100vw;
+}
+.login_e_cadastro {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  & p {
+    font-size: 1.2em;
+    color: #3c3c3c;
+  }
+}
+.box-login {
+  height: 380px;
+  width: 350px;
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 14px;
+}
+.legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+.box-login:hover {
+  & .legend {
+    color: #48e5c2;
+  }
+}
+.inputBase {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px;
+  margin-bottom: 20px;
+  outline: none;
+  text-indent: 10px;
+}
+.inputBase:focus {
+  outline: solid 2px #48e5c2;
+}
+.button {
+  color: #3c3c3c;
+  background-color: #48e5c2;
+  margin-top: 5px;
+  height: 35px;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  border-style: none;
+}
+.button:focus {
+  outline: solid 2px #48e5c2;
+}
+.box-cadastre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 250px;
+}
+.txtcadastro {
+  font-size: 15px;
+  display: inline-block;
+  align-content: center;
+}
+.btncadastro {
+  font-size: 15px;
+  width: 80px;
+  background-color: #48e5c2;
+  color: #3c3c3c;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+  box-shadow: 3px 3px 8px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+}
+
+@media (max-width: 480px) {
+}
