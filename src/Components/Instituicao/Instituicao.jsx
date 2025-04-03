@@ -38,7 +38,7 @@ const Instituicao = () => {
     },
   ];
   const myList = lista.map((item) => (
-    <Link className="select_parceiro" to={"/instituicao"}>
+    <Link className="select_parceiro" to={"/instituicao/SelectInstituicao"}>
       <div key={item.id} className="box">
         <div className="nome">
           <p>{item.nome}</p>
@@ -79,7 +79,10 @@ const Instituicao = () => {
             {/* <!-- -----Botão cadastrar Parceiro-------------------------------------------------------------------------------------------------------------- --> */}
             <div className="box-btn_cad_parceiro">
               <ul className="ul_btn_parceiros">
-                <Link className="link_btn_parceiros" to={"/cad_parceiro"}>
+                <Link
+                  className="link_btn_parceiros"
+                  to={"/instituicao/cadastroparceiro"}
+                >
                   <li className="li_btn_parceiros">+ instituicao</li>
                 </Link>
               </ul>

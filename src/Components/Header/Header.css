@@ -30,10 +30,11 @@ header {
   align-items: end;
 }
 ul {
-  text-align: right;
+  /* text-align: right; */
   height: 40px;
   width: 500px;
-  margin-right: 25px;
+  text-align: center;
+
 }
 li {
   display: inline-block;
@@ -47,7 +48,8 @@ li {
   padding: 8px 10px;
   color: black;
   font-weight: bold;
-  width: 60px;
+  width: 70px;
+text-align: center;
 }
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.7);

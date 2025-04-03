@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 5px;
+}
+.titulo-cadParceiro {
+  margin: 30px 0;
+  text-align: center;
+}
+.field_cadParceiro {
+  border: #a0a0a0 solid 2px;
+  width: 955px;
+  height: 550px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  /* background-color: rgba(158, 255, 245, 0.4); */
+}
+.box1-cadParceiro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+}
+.box-cnpj_nome_cadParceiro {
+  width: 800px;
+  height: 150px;
+}
+.box-cnpj_cadParceiro,
+.nome_cadParceiro {
+  height: 70px;
+}
+.p-label {
+  font-size: 13px;
+}
+.inp_cnpj {
+  width: 200px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 5px 6px 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.box-cnpj_nome_cadParceiro {
+  width: 800px;
+  height: 150px;
+}
+.inp_logradouro,
+.inp_nome {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.box-img_cadParceiro {
+  width: 130px;
+  height: 150px;
+}
+.img_into_cadParceiro {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  border: solid 1px #3c3c3c;
+  border-radius: 10px;
+
+  & p {
+    margin: auto;
+  }
+}
+.box-cep_tipo_cadParceiro {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-top: 10px;
+}
+.cep_cadParceiro,
+.tipo_cadParceiro {
+  align-content: center;
+}
+.btn_cadDoacoes,
+.inp_cep,
+.inp_tipoLogradouro,
+.inp_bairro,
+.inp_cidade,
+.inp_celular,
+.inp_data {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.inp_uf,
+.inp_numero {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 70px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.inp_email {
+  width: 370px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.box-logradouro_numero_cadParceiro,
+.box-bairro_cidade_uf_cadParceiro,
+.box2-cadParceiro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+.cep_cadParceiro,
+.tipo_cadParceiro,
+.logradouro_cadParceiro,
+.numero_cadParceiro,
+.bairro_cadParceiro,
+.cidade_cadParceiro,
+.uf_cadParceiro,
+.email_cadParceiro,
+.celular_cadParceiro {
+  align-content: center;
+}
+.box3-cadParceiro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  align-items: end;
+}
+.btn_cadDoacoes {
+  background-color: #48e5c2;
+}
+
+/* Dimencionamento para a borda da pagina */
+@media (max-width: 1110px) {
+  .box-content {
+    width: 100%;
+  }
+}
+
+/* Dimencionamento para a borda da pagina */
+@media (max-width: 980px) {
+  .box-content {
+    width: 100%;
+    margin: auto;
+  }
+  .field_cadParceiro {
+    width: 745px;
+    height: 550px;
+  }
+  .box-cnpj_nome_cadParceiro {
+    width: 500px;
+    height: 150px;
+  }
+  .inp_logradouro,
+  .inp_nome {
+    width: 500px;
+    height: 35px;
+  }
+}
+
+/* Dimencionamento para telas de tablets */
+@media (min-width: 481px) and (max-width: 769px) {
+  .box-content {
+    width: 100%;
+  }
+  .field_cadParceiro {
+    width: 520px;
+  }
+  .box-cnpj_nome_cadParceiro {
+    width: 380px;
+    height: 150px;
+  }
+  .box-img_cadParceiro {
+    width: 130px;
+    height: 150px;
+  }
+  .img_into_cadParceiro {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    border: solid 1px #3c3c3c;
+    border-radius: 10px;
+
+    & p {
+      margin: auto;
+    }
+  }
+  .cep_cadParceiro,
+  .tipo_cadParceiro {
+    align-content: center;
+  }
+  /* .box-logradouro_numero_cadParceiro,
+  .box-bairro_cidade_uf_cadParceiro,
+  .box2-cadParceiro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+  } */
+  .inp_logradouro,
+  .inp_nome {
+    width: 370px;
+  }
+  .inp_cnpj {
+    width: 160px;
+  }
+  .inp_cnpj,
+  .inp_uf,
+  .inp_numero,
+  .inp_cep,
+  .inp_tipoLogradouro,
+  .inp_bairro,
+  .inp_cidade,
+  .inp_celular,
+  .inp_email,
+  .inp_logradouro,
+  .inp_nome,
+  .inp_data,
+  .btn_cadDoacoes {
+    height: 30px;
+  }
+  .inp_email {
+    width: 300px;
+  }
+  .btn_cadDoacoes,
+  .inp_data {
+    width: 110px;
+  }
+}
+
+/* Dimencionamento para telas de celulares */
+@media (max-width: 480px) {
+  /* pagina principl de conteudos */
+  .box-content {
+    width: 100%;
+  }
+  .btn_cadDoacoes,
+  .inp_cep,
+  .inp_tipoLogradouro,
+  .inp_bairro,
+  .inp_cidade,
+  .inp_celular {
+    width: 70px;
+    height: 20px;
+  }
+}
